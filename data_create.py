@@ -1,16 +1,16 @@
-def set_title(): #ex name_data
+import datetime
+now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
+
+def set_title(): 
     title = input('Введите название заметки: ')
     return title
 
-def set_data(): #ex surname_data
+def set_data(): 
     data = input('Введите текст заметки: ')
     return data
 
-# def second_name_data():
-#     second_name = input('Введите отчество: ')
-#     return second_name
+def set_cur_date():
+    return datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
 
-# def phone_data():
-#     phone = input('Введите телефон: ')
-#     return phone
-
+# print now.strftime("%d-%m-%Y %H:%M")
+# Текущая дата и время с использованием strftime: 18-11-2015 16:15
